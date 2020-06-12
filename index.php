@@ -1,6 +1,8 @@
 <?php
 
 include 'cad.php';
+include 'index4.php';
+echo "halo Sasha!";
 $sql = "CREATE TABLE MyGuests(
 id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
 firstname VARCHAR(30) NOT NULL,
