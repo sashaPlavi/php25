@@ -1,8 +1,8 @@
 <?php
 include 'cad.php';
 
-echo 'Hello ' . htmlspecialchars($_POST["title"]) . '! <br>';
-echo 'Hello ' . htmlspecialchars($_POST["content"]) . '!';
+//echo 'Hello ' . htmlspecialchars($_POST["title"]) . '! <br>';
+//echo 'Hello ' . htmlspecialchars($_POST["content"]) . '!';
 
 function addPost()
 {
@@ -16,4 +16,12 @@ function addPost()
 
     $result = ExecuteQuery($query, "Inserted Successfully");
     echo $result;
+};
+
+function getPosts()
+{
+    $query = "SELECT * FROM all_the_best_post;";
+    $post = ExecuteQuery($query, 'reading congrats successfuly!');
+    //var_dump($post);
+    return $post;
 };
