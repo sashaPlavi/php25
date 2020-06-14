@@ -11,7 +11,7 @@ include 'inc/head.php'
     <div id="wrap">
         <div class="container ">
             <div class="row">
-                <form method="post" action="user.php">
+                <form method="post" action="/php25/models/addPost.php">
                     <div class="form-group ">
                         <label for="exampleInputEmail1">Title</label>
                         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="title">
@@ -27,7 +27,7 @@ include 'inc/head.php'
                 </form>
             </div>
             <?php
-            // get_all_records();
+
             ?>
         </div>
     </div>

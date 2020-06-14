@@ -10,7 +10,7 @@
 
      <div class="container">
          <?php
-            include "user.php";
+            include "models/getPost.php";
             include "router.php";
             $path = getPath();
             $pathArr = explode('/', $path);
@@ -22,7 +22,7 @@
             for ($i = 0; $i <= (count($posts) - 1); $i++) : ?>
 
 
-             <div class="card" style="width: 18rem ; background: #f4f4f4 ; padding: 1rem;">
+             <div class="card" style="width: 80% ; background: #f4f4f4 ; padding: 1rem; margin:1rem;">
                  <div class="card-body">
                      <h5 class="card-title"><?php echo $posts[$i]['title'] ?></h5>
 

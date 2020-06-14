@@ -1,5 +1,5 @@
 <?php
-include 'cad.php';
+include '../cad.php';
 
 //echo 'Hello ' . htmlspecialchars($_POST["title"]) . '! <br>';
 //echo 'Hello ' . htmlspecialchars($_POST["content"]) . '!';
@@ -18,10 +18,6 @@ function addPost()
     echo $result;
 };
 
-function getPosts()
-{
-    $query = "SELECT * FROM all_the_best_post;";
-    $post = ExecuteQuery($query, 'reading congrats successfuly!');
-    //var_dump($post);
-    return $post;
-};
+addPost();
+
+header('Location:http://localhost/php25/list.php');
