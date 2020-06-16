@@ -10,7 +10,7 @@
 
      <div class="container">
          <?php
-            include "models/getPost.php";
+            include "getPost.php";
             include "router.php";
             $path = getPath();
             $pathArr = explode('/', $path);

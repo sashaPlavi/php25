@@ -1,5 +1,5 @@
 <?php
-include '../cad.php';
+include 'cad.php';
 
 //echo 'Hello ' . htmlspecialchars($_POST["title"]) . '! <br>';
 //echo 'Hello ' . htmlspecialchars($_POST["content"]) . '!';

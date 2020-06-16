@@ -1,5 +1,5 @@
 <?php
-include '../cad.php';
+include 'cad.php';
 
 function getPosts()
 {
